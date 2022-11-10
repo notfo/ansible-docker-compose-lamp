@@ -1,5 +1,4 @@
 <?php
-
 	$link = mysqli_connect("database", "root", $_ENV['MYSQL_ROOT_PASSWORD'], "docker");
 	if (mysqli_connect_errno()) {
 		 printf("MySQL connecttion failed: %s", mysqli_connect_error());
