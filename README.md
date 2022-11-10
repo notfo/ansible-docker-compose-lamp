@@ -25,8 +25,9 @@ make up
 ```shell
 make deploy
 ```
-Тестовый Sql-дамп находится в папке ./config/initdb
-Тестовый PHP-скрипт является index.php в папке ./www
+-Тестовый Sql-дамп находится в папке ./config/initdb.
+-Тестовым PHP-скриптом является index.php в папке ./www
+
 
 
 * На данный момент не реализовано масштабирование backend-контейнера через docker swarm и scale
