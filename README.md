@@ -1,4 +1,4 @@
-# LAMP stack built with Docker Compose and Ansible deploy
+# Docker Compose LAMP stack built and Ansible deploy
 
  Стек:
 
