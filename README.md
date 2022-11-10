@@ -6,7 +6,7 @@
 - Apache
 - MySQL8
 - phpMyAdmin
-- Redis
+
 
 
 ## Установка
