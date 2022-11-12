@@ -37,8 +37,6 @@
       copy:
         src: ./
         dest: ./testproject
-      loop:
-      - docker-compose.yml
     
     - name: Build 'all' target with a Makefile
       make:
