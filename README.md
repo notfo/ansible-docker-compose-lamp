@@ -25,12 +25,13 @@ make up
 ```shell
 make deploy
 ```
+- Чтобы масштабировать приложение (backend) например до 15
+```shell
+make upscale backend=15
+```
+
 -Тестовый Sql-дамп находится в папке ./config/initdb.
 -Тестовым PHP-скриптом является index.php в папке ./www
-
-
-
-* На данный момент не реализовано масштабирование backend-контейнера через docker swarm и scale
 
 
 
