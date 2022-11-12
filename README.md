@@ -16,14 +16,19 @@
 git clone https://github.com/notfo/ansible-docker-compose-lamp.git
 ```
 - Отредактируйте файл .env или скопируйте параметры сервера по умолчанию из sample.env
-- Чтобы развернуть Docker Compose LAMP на локальной машине используйте утилиту make (параметры сервера будут установлены из sample.env
+- Чтобы развернуть Docker Compose LAMP на машине используйте утилиту make (параметры сервера будут установлены из sample.env
 
 ```shell
-make up
+make build up
 ```
-- Чтобы развернуть Docker Compose LAMP на серверах, указанных в inventory-файле Ansible
+- или
 ```shell
 make deploy
+```
+
+- Чтобы развернуть Docker Compose LAMP на серверах, указанных в inventory-файле Ansible
+```shell
+make cluster
 ```
 - Чтобы масштабировать приложение (backend) например до 15
 ```shell
