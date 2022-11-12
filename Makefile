@@ -1,14 +1,16 @@
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
-.PHONY: build up upscale start down destroy stop restart deploy
+.PHONY: build up deploy upscale start down destroy stop restart cluster
 
 build:
 	cp sample.env .env
 	docker-compose build $(c)
 up:
+	docker-compose up -d $(c)
+deploy:
 	cp sample.env .env
+	docker-compose build $(c)
 	docker-compose up -d $(c)
 upscale:
-	cp sample.env .env
 	docker-compose up -d --scale backend=$(backend)
 start:
 	docker-compose start $(c)
@@ -21,5 +23,7 @@ stop:
 restart:
 	docker-compose stop $(c)
 	docker-compose up -d $(c)
-deploy:
-	ansible-playbook playbook.yml $(c)
+cluster:
+	ansible-playbook playbook.yml
+
+
