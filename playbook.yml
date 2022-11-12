@@ -33,7 +33,7 @@
       pip:
         name: docker
         
-    - name: Copy Docker Compose files
+    - name: Copy Project folder to client
       copy:
         src: ./
         dest: ./testproject/
@@ -46,4 +46,3 @@
         project_src: ./testproject/
         files:
         - docker-compose.yml
-
