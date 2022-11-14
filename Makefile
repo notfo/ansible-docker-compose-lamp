@@ -25,5 +25,3 @@ restart:
 	docker-compose up -d $(c)
 cluster:
 	ansible-playbook playbook.yml
-
-
