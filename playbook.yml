@@ -42,4 +42,3 @@
       make:
         chdir: ./testproject
         target: deploy
-        file: Makefile
